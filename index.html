@@ -4,23 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Paper Rock Scissors</title>
   </head>
   <body>
-    <div id="btns">
-      <button id="btn-paper">Paper</button>
-      <button id="btn-scissors">Scissors</button>
-      <button id="btn-rock">Rock</button>
+    <div class="container">
+      <p>
+        Play the game. The first one to reach the score of 5 wins the game.
+        Start by choosing your weapon.
+      </p>
+      <div class="btns">
+        <button id="btn-paper">Paper</button>
+        <button id="btn-scissors">Scissors</button>
+        <button id="btn-rock">Rock</button>
+      </div>
+      <div id="selection"></div>
+      <div id="output"></div>
+      <div class="outputScore">
+        <span>Computer score is :</span>
+        <span id="computerScore"></span>
+      </div>
+
+      <div class="outputScore">
+        <span>Player score is :</span> <span id="playerScore"></span>
+      </div>
+      <div class="outputScore">
+        <span>Game tie :</span><span id="tieScore"></span>
+      </div>
+
+      <div id="winner"></div>
     </div>
-    <div id="selection"></div>
-    <div id="output"></div>
-    <p>Computer score is :</p>
-    <div id="computerScore"></div>
-    <p>Player score is :</p>
-    <div id="playerScore">Score is :</div>
-    <p>Game tie :</p>
-    <div id="tieScore"></div>
-    <div id="winner"></div>
 
     <script src="app.js"></script>
   </body>
